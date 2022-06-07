@@ -1,0 +1,100 @@
+.section1content2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.tabs {
+  padding: 0 20px;
+  padding-bottom: 40px;
+}
+.cardwrapper {
+  position: relative;
+}
+.cardconnector {
+  background-color: #2acfcf;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 10px;
+  transform: translateX(-50%);
+}
+.cardtext {
+  text-align: center;
+  background-color: #fff;
+  padding: 50px 20px 20px;
+  /* margin: 0 20px 40px; */
+  position: relative;
+  border-radius: 5px;
+}
+.cardtext:not(:last-child) {
+  margin-bottom: 60px;
+}
+
+.cardicon {
+  border-radius: 50%;
+  padding: 13px;
+  width: 50px;
+  background-color: hsl(257, 27%, 26%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+.cardicon img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.cardh2 {
+  color: hsl(260, 8%, 14%);
+  padding-bottom: 10px;
+}
+.pcard {
+  color: hsl(257, 7%, 63%);
+}
+
+@media (min-width: 768px) {
+  .section1content2 {
+    background-color: #f9f7fd;
+  }
+  .cardwrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    padding: 80px 0;
+  }
+  .cardicon {
+    left: 15%;
+  }
+  .cardtext {
+    text-align: left;
+  }
+
+  .cardtext:last-of-type {
+    bottom: -50px;
+  }
+  .cardtext:not(:last-child) {
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+  .cardtext:nth-child(2) {
+    top: -50px;
+  }
+  .cardconnector {
+    left: 0;
+    right: 0;
+    bottom: unset;
+    top: 50%;
+    width: 100%;
+    height: 10px;
+    transform: translateY(-50%);
+  }
+}

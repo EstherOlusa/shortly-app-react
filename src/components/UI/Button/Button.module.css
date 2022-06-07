@@ -1,0 +1,17 @@
+.btn {
+  color: #fff;
+  background-color: #2acfcf;
+  border-radius: 20px;
+  padding: 10px 30px;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  font-size: 1.5em;
+}
+@media (min-width: 768px) {
+  .btn {
+    padding: 10px 40px;
+    font-size: 1.2em;
+    /* border-radius: 20px; */
+  }
+}
