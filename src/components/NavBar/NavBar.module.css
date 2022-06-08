@@ -28,7 +28,8 @@
   visibility: hidden;
   pointer-events: none;
 }
-.drawer.active {
+.drawerActive {
+  composes: drawer;
   visibility: visible;
   pointer-events: auto;
 }

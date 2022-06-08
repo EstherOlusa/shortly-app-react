@@ -4,8 +4,9 @@ import FormInput from "./components/Form/FormInput";
 import AdvancedCard from "./components/AdvancedStatistics/AdvancedStatisticsCard/AdvancedStatisticsCard";
 import Action from "./components/ActionSection/Action";
 import Footer from "./components/Footer/Footer";
-import "./styles/font.css";
 import CardSection from "./components/AdvancedStatistics/CardSection/CardSection";
+import "./styles/font.css";
+
 function App() {
   return (
     <div className="app">

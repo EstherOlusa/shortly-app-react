@@ -1,9 +1,25 @@
-import React from "react";
+import React, { useRef, useState } from "react";
+import { useClickOutside } from "../../hooks/useClickOutside";
 import logo from "../../assets/images/logo.svg";
 import menuicon from "../../assets/images/icon-menu.svg";
 import classes from "./NavBar.module.css";
 
 const NavBar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const mobileMenuRef = useRef(null);
+
+  const closeMobileMenu = () => setIsOpen(false);
+
+  useClickOutside(mobileMenuRef, closeMobileMenu);
+
+  const menuClickHandler = () => {
+    setIsOpen((prev) => !prev);
+
+    // sue((v) => !v);
+  };
+
+  // drawer : active
+  //  isOpen ? classes.drawer.active" : "classes.drawer"
   return (
     <>
       <nav className={classes.nav}>
@@ -14,18 +30,18 @@ const NavBar = () => {
           <div className={classes.navcontentdesktop}>
             <ul className={classes.navlist}>
               <li className={classes.navitem}>
-                <a className={classes.navlink} href="">
+                <a className={classes.navlink} href="#">
                   Features
                 </a>
               </li>
 
               <li className={classes.navitem}>
-                <a className={classes.navlink} href="">
+                <a className={classes.navlink} href="#">
                   Pricing
                 </a>
               </li>
               <li className={classes.navitem}>
-                <a className={classes.navlink} href="">
+                <a className={classes.navlink} href="#">
                   Resources
                 </a>
               </li>
@@ -33,41 +49,44 @@ const NavBar = () => {
 
             <ul className={classes.navactions}>
               <li className={classes.navitem}>
-                <a className={classes.navlink} href="">
+                <a className={classes.navlink} href="#">
                   Login
                 </a>
               </li>
 
               <li className={classes.navitem}>
-                <a className={classes.navlink} href="">
+                <a className={classes.navlink} href="#">
                   Sign up
                 </a>
               </li>
             </ul>
           </div>
         </div>
-        <div className={classes.naviconmobile}>
+        <div className={classes.naviconmobile} onClick={menuClickHandler}>
           <img src={menuicon} alt="" />
         </div>
       </nav>
-      <div className={classes.drawer}>
+      <div
+        ref={mobileMenuRef}
+        className={isOpen ? classes.drawerActive : classes.drawer}
+      >
         <div className={classes.draweroverlay}></div>
         <div className={classes.drawercontent}>
           <div className={classes.drawerlist}>
             <ul className={classes.navlist}>
               <li className={classes.navitem}>
-                <a className={classes.navlink} href="">
+                <a className={classes.navlink} href="#">
                   Features
                 </a>
               </li>
 
               <li className={classes.navitem}>
-                <a className={classes.navlink} href="">
+                <a className={classes.navlink} href="#">
                   Pricing
                 </a>
               </li>
               <li className={classes.navitem}>
-                <a className={classes.navlink} href="">
+                <a className={classes.navlink} href="#">
                   Resources
                 </a>
               </li>
@@ -77,13 +96,13 @@ const NavBar = () => {
           <div class={classes.navactions}>
             <ul>
               <li class={classes.navitem}>
-                <a class={classes.navlink} href="">
+                <a class={classes.navlink} href="#">
                   Login
                 </a>
               </li>
 
               <li class={classes.navitem}>
-                <a class={classes.navlink} href="">
+                <a class={classes.navlink} href="#">
                   Sign up
                 </a>
               </li>
