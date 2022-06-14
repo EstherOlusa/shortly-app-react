@@ -31,10 +31,19 @@
   width: 100%;
   margin-bottom: 10px;
   text-align: left;
+  font-size: 0.9em;
+  font-family: "Poppins", sans-serif;
 }
+
 .inputerror {
+  composes: input;
   border: 1px solid hsl(0, 87%, 67%);
 }
+
+.inputerror::placeholder {
+  color: hsl(0, 87%, 67%);
+}
+
 .errortext {
   color: hsl(0, 87%, 67%);
   visibility: hidden;
@@ -88,6 +97,9 @@
     padding: 15px 30px;
     flex-shrink: 0;
     width: auto;
+  }
+  .labelbutton:hover {
+    background-color: #80dfdf;
   }
   .linklist {
     width: 100%;

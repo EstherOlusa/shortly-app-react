@@ -22,71 +22,71 @@ const Footer = () => {
           <div className={classes.footernav}>
             <ul className={classes.footerlist}>
               <li className={classes.footeritem}>
-                <a className={classes.footerlink} href="">
+                <a className={classes.footerlink} href="link">
                   <span className={classes.header}>Features</span>
                 </a>
               </li>
               <li className={classes.footeritem}>
-                <a className={classes.footerlink} href="">
+                <a className={classes.footerlink} href="link">
                   Link Shortening
                 </a>
               </li>
               <li className={classes.footeritem}>
-                <a className={classes.footerlink} href="">
+                <a className={classes.footerlink} href="link">
                   BrandedLinks
                 </a>
               </li>
               <li className={classes.footeritem}>
-                <a className={classes.footerlink} href="">
+                <a className={classes.footerlink} href="link">
                   Analytics
                 </a>
               </li>
             </ul>
             <ul className={classes.footerlist}>
               <li className={classes.footeritem}>
-                <a className={classes.footerlink} href="">
+                <a className={classes.footerlink} href="link">
                   <span className={classes.header}>Resources</span>
                 </a>
               </li>
               <li className={classes.footeritem}>
-                <a className={classes.footerlink} href="">
+                <a className={classes.footerlink} href="link">
                   Blogs
                 </a>
               </li>
               <li className={classes.footeritem}>
-                <a className={classes.footerlink} href="">
+                <a className={classes.footerlink} href="link">
                   Developers
                 </a>
               </li>
               <li className={classes.footeritem}>
-                <a className={classes.footerlink} href="">
+                <a className={classes.footerlink} href="link">
                   Support
                 </a>
               </li>
             </ul>
             <ul className={classes.footerlist}>
               <li className={classes.footeritem}>
-                <a className={classes.footerlink} href="">
+                <a className={classes.footerlink} href="link">
                   <span className={classes.header}>Company</span>
                 </a>
               </li>
               <li className={classes.footeritem}>
-                <a className={classes.footerlink} href="">
+                <a className={classes.footerlink} href="link">
                   About
                 </a>
               </li>
               <li className={classes.footeritem}>
-                <a className={classes.footerlink} href="">
+                <a className={classes.footerlink} href="link">
                   Our Team
                 </a>
               </li>
               <li className={classes.footeritem}>
-                <a className={classes.footerlink} href="">
+                <a className={classes.footerlink} href="link">
                   Careers
                 </a>
               </li>
               <li className={classes.footeritem}>
-                <a className={classes.footerlink} href="">
+                <a className={classes.footerlink} href="link">
                   Contact
                 </a>
               </li>

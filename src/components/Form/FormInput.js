@@ -45,7 +45,7 @@ const FormInput = ({ addToLinks }) => {
           <form className={classes.formdata} onSubmit={onSubmit}>
             <div className={classes.inputdata}>
               <input
-                className={classes.input}
+                className={errorText ? classes.inputerror : classes.input}
                 type="text"
                 placeholder="Shorten a link here..."
                 id="link"
