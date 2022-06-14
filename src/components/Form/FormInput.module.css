@@ -9,7 +9,7 @@
   background-color: hsl(257, 27%, 26%);
   padding: 15px;
   border-radius: 5px;
-  margin-bottom: 20px;
+  margin-bottom: -20px;
   cursor: pointer;
 }
 .formdata {
@@ -28,8 +28,6 @@
   color: hsl(0, 87%, 67%);
   visibility: hidden;
   font-style: italic;
-}
-.errortext.active {
   visibility: visible;
   padding-bottom: 20px;
 }

@@ -35,36 +35,6 @@ body {
     justify-content: flex-start;
   } */
 
-  .link-card {
-    background-color: #fff;
-    width: 100%;
-    padding: 10px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .link-card:not(last-child) {
-    margin-bottom: 20px;
-  }
-  .short-link {
-    color: #2acfcf;
-    margin-left: auto;
-    padding-right: 20px;
-  }
-  .btn-copy {
-    padding: 8px 25px;
-    background-color: #2acfcf;
-    color: #fff;
-    border: none;
-    font-family: "Poppins", sans-serif;
-    border-radius: 5px;
-  }
-  .btn-copy:hover {
-    background-color: rgb(30, 5, 30);
-  }
-
   .c-container {
     width: 100%;
     max-width: 1200px;
@@ -73,4 +43,8 @@ body {
   .section-1-container {
     max-width: 600px;
   }
-} ;
+
+  .statistics-container {
+    background-color: #f9f7fd;
+  }
+}
