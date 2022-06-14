@@ -1,7 +1,9 @@
 .container {
-  width: 100%;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 15px 20px;
+  padding: 10px 15px;
+  background-color: #fff;
+  border-radius: 10px;
 }
 .linkcard {
   background-color: #fff;
@@ -9,17 +11,18 @@
   padding: 10px;
   border-radius: 10px;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
 }
 .linkcard:not(last-child) {
   margin-bottom: 20px;
 }
+.originallink {
+  border-bottom: 1px rgb(175, 172, 172) solid;
+  padding-bottom: 10px;
+}
 .shortlink {
   color: #2acfcf;
-  margin-left: auto;
-  padding-right: 20px;
+  padding: 10px 0;
 }
 .btncopy {
   padding: 8px 25px;
@@ -31,4 +34,25 @@
 }
 .btncopy:hover {
   background-color: rgb(30, 5, 30);
+}
+@media (min-width: 768px) {
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: transparent;
+  }
+  .linkcard {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .originallink {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  .shortlink {
+    margin-left: auto;
+    padding: 0 20px;
+  }
 }

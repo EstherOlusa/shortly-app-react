@@ -30,18 +30,18 @@ const NavBar = () => {
           <div className={classes.navcontentdesktop}>
             <ul className={classes.navlist}>
               <li className={classes.navitem}>
-                <a className={classes.navlink} href="#">
+                <a className={classes.navlink} href="link">
                   Features
                 </a>
               </li>
 
               <li className={classes.navitem}>
-                <a className={classes.navlink} href="#">
+                <a className={classes.navlink} href="link">
                   Pricing
                 </a>
               </li>
               <li className={classes.navitem}>
-                <a className={classes.navlink} href="#">
+                <a className={classes.navlink} href="link">
                   Resources
                 </a>
               </li>
@@ -49,15 +49,17 @@ const NavBar = () => {
 
             <ul className={classes.navactions}>
               <li className={classes.navitem}>
-                <a className={classes.navlink} href="#">
+                <a className={classes.navlink} href="link">
                   Login
                 </a>
               </li>
 
               <li className={classes.navitem}>
-                <a className={classes.navlink} href="#">
-                  Sign up
-                </a>
+                <button className={classes.btnsignup}>
+                  <a className={classes.navlink} href="link">
+                    Sign up
+                  </a>
+                </button>
               </li>
             </ul>
           </div>
@@ -75,18 +77,18 @@ const NavBar = () => {
           <div className={classes.drawerlist}>
             <ul className={classes.navlist}>
               <li className={classes.navitem}>
-                <a className={classes.navlink} href="#">
+                <a className={classes.navlink} href="link">
                   Features
                 </a>
               </li>
 
               <li className={classes.navitem}>
-                <a className={classes.navlink} href="#">
+                <a className={classes.navlink} href="link">
                   Pricing
                 </a>
               </li>
               <li className={classes.navitem}>
-                <a className={classes.navlink} href="#">
+                <a className={classes.navlink} href="link">
                   Resources
                 </a>
               </li>
@@ -96,15 +98,17 @@ const NavBar = () => {
           <div class={classes.navactions}>
             <ul>
               <li class={classes.navitem}>
-                <a class={classes.navlink} href="#">
+                <a class={classes.navlink} href="link">
                   Login
                 </a>
               </li>
 
               <li class={classes.navitem}>
-                <a class={classes.navlink} href="#">
-                  Sign up
-                </a>
+                <button className={classes.btn}>
+                  <a class={classes.navlink} href="link">
+                    Sign up
+                  </a>
+                </button>
               </li>
             </ul>
           </div>

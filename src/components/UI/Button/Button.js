@@ -3,7 +3,9 @@ import classes from "./Button.module.css";
 const Button = () => {
   return (
     <>
-      <button className={classes.btn}>Get Started</button>
+      <div className={classes.btncontainer}>
+        <button className={classes.btn}>Get Started</button>
+      </div>
     </>
   );
 };

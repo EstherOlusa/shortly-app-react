@@ -24,7 +24,7 @@
   top: 50px;
   right: 0;
   left: 0;
-  padding: 15px;
+  padding: 20px 15px;
   visibility: hidden;
   pointer-events: none;
 }
@@ -38,7 +38,7 @@
   width: 100%;
   border-radius: 10px;
   text-align: center;
-  padding: 0 20px;
+  padding: 40px 20px;
 }
 .drawercontent .navitem {
   list-style: none;
@@ -51,6 +51,15 @@
 .drawerlist {
   border-bottom: 1px solid hsl(0, 0%, 75%);
   padding-bottom: 10px;
+}
+.btnsignup {
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  background-color: #2acfcf;
+  font-family: "Poppins", sans-serif;
+  font-size: 1em;
 }
 @media (min-width: 768px) {
   .naviconmobile {
@@ -79,6 +88,7 @@
     display: flex;
     flex-direction: row;
     margin-left: auto;
+    align-items: center;
   }
 
   .navitem {
@@ -90,5 +100,19 @@
   }
   .navitem:not(:last-child) {
     margin-right: 30px;
+  }
+  .btnsignup {
+    padding: 5px 20px;
+  }
+  .btnsignup:hover {
+    background-color: #80dfdf;
+  }
+  .btnsignup .navlink {
+    color: #fff;
+  }
+  .nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 40px;
   }
 }

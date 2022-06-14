@@ -3,23 +3,34 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 20px;
 }
 
 .form {
   background-color: hsl(257, 27%, 26%);
   padding: 15px;
-  border-radius: 5px;
+  border-radius: 10px;
   margin-bottom: -20px;
   cursor: pointer;
 }
 .formdata {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
+
+.inputdata {
+  width: 100%;
+  flex: 1;
+}
+
 .input {
-  padding: 15px 80px;
+  padding: 15px;
   border-radius: 5px;
   border: none;
+  width: 100%;
+  margin-bottom: 10px;
+  text-align: left;
 }
 .inputerror {
   border: 1px solid hsl(0, 87%, 67%);
@@ -39,6 +50,7 @@
   font-weight: 700;
   border: none;
   border-radius: 5px;
+  width: 100%;
 }
 @media (min-width: 768px) {
   .section1content2 {
@@ -62,8 +74,8 @@
     text-align: left;
     padding: 15px 20px;
     margin-right: auto;
-    width: 100%;
     margin-right: 20px;
+    margin-bottom: 0;
   }
   .inputdata {
     display: flex;
@@ -75,6 +87,7 @@
   .labelbutton {
     padding: 15px 30px;
     flex-shrink: 0;
+    width: auto;
   }
   .linklist {
     width: 100%;
