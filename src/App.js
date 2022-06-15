@@ -25,7 +25,9 @@ function App() {
       <div className="statistics-container">
         <FormInput addToLinks={addToLinks} />
         <LinkCards links={links} />
+
         <AdvancedCard />
+
         <CardSection />
       </div>
       <div>

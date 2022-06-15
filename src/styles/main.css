@@ -11,37 +11,9 @@ body {
   width: 100%;
 }
 
-.content-img img {
-  width: 100%;
-}
-.content-img {
-  padding-bottom: 30px;
-}
-
-/* .btn-1 {
-  display: flex;
-  align-items: center;
-  justify-content: center; 
-} */
-
 @media (min-width: 768px) {
   body {
     background-color: #fff;
-  }
-
-  /* .btn-1 {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-  } */
-
-  .c-container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  .section-1-container {
-    max-width: 600px;
   }
 
   .statistics-container {
